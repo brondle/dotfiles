@@ -1,0 +1,4 @@
+Bundle 'tpope/vim-liquid'
+Bundle 'tomasr/molokai'
+Bundle 'mxw/vim-jsx'
+Bundle 'spf13/vim-autoclose'
