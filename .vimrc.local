@@ -16,6 +16,7 @@ inoremap <C-l> <Right>
 inoremap <C-j> <C-o>gj
 
 " yank to clipboard
+" yank to clipboard
 if has("clipboard")
   set clipboard=unnamed " copy to the system clipboard
 
@@ -27,3 +28,10 @@ endif
 let g:AutoPairs={}
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes':   [],'passive_filetypes': [] }
 let g:syntastic_javascript_checkers=['eslint']
+" Plugin 'vim-python/python-syntax'
+let g:pymode_lint_on_write = 0
+
+let g:autoformat_autoindent = 0
+noremap <F3> :Autoformat <CR>
+
+autocmd VimEnter * NERDTree

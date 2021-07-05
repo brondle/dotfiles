@@ -202,8 +202,7 @@
     " Python {
         if count(g:spf13_bundle_groups, 'python')
             " Pick either python-mode or pyflakes & pydoc
-            Bundle 'klen/python-mode'
-            Bundle 'yssource/python.vim'
+            Bundle 'vim-python/python-syntax'
             Bundle 'python_match.vim'
             Bundle 'pythoncomplete'
         endif
@@ -211,7 +210,11 @@
 
     " Javascript {
         if count(g:spf13_bundle_groups, 'javascript')
+            Bundle 'elzr/vim-json'
+            Bundle 'groenewege/vim-less'
             Bundle 'pangloss/vim-javascript'
+            Bundle 'briancollins/vim-jst'
+            Bundle 'kchmck/vim-coffee-script'
         endif
     " }
 
